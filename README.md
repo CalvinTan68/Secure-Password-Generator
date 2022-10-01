@@ -23,3 +23,5 @@ IMPORTANT : MAKE SURE YOU HAVE PYTHON INSTALLED ON YOUR DEVICE
 ```
 - Run the script
 - Input number of digits you want and the generated password will be shown
+
+Another way to use this script, is visit https://replit.com/@CalvinTan68/Secure-Password-Generator#main.py
