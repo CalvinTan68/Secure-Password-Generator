@@ -19,7 +19,7 @@ IMPORTANT : MAKE SURE YOU HAVE PYTHON INSTALLED ON YOUR DEVICE
 
 - Then install dependencies by running
 ```bash
-  pip install random
+  pip install random string
 ```
 - Run the script
 - Input number of digits you want and the generated password will be shown

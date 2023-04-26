@@ -1,13 +1,10 @@
 import random
+import string
 
-smallCase = 'abcdefghijklmnopqrstuvwxyz'
-upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-numbers = '0123456789'
-symbols = '[]{}()*;/.,-_'
+chars = string.ascii_letters + string.digits + '!@#$%^&*()_+-=[]{};:<,.">/?`~'
 
-combine = smallCase + upperCase + numbers + symbols
-print("Welcome to the Secure Password Generator")
-print("Just simply input how many digits you need, and it will auto generate it for you (Max. 75)")
-length = input("Digits you need : ")
-password = "".join(random.sample(combine, int(length)))
-print(password)
+length = input("Enter the length of the password you need (Max. 75): ")
+length = min(int(length), 75) if length.isdigit() else 10
+
+password = ''.join(random.choice(chars) for _ in range(length))
+print("Your new password is:", password)
